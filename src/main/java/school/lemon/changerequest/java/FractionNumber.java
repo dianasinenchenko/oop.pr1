@@ -87,7 +87,7 @@ public class FractionNumber {
         return new FractionNumber(anotherDividend, anotherDivisor);
     }
 
-    public final FractionNumber ONE = new FractionNumber(1, 1);
-    public final FractionNumber ZERRo = new FractionNumber(0, 1);
+   public final static   FractionNumber ONE = new FractionNumber(1, 1);
+   public final static  FractionNumber ZERRo = new FractionNumber(0, 1);
 
 }
