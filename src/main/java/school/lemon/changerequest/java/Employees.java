@@ -12,4 +12,8 @@ public interface Employees {
     int GetRate();
 
     void SetRate(int rate);
+
+    String GetName();
+
+    void SetName(String name);
 }
