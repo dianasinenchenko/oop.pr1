@@ -6,12 +6,13 @@ package school.lemon.changerequest.java;
 public class IAccountantImpl implements IAccountant {
     private int rate;
     private int workHours;
+    private String name;
 
 
-    public IAccountantImpl(int workHours, int rate) {
+    public IAccountantImpl(int workHours, int rate, String name) {
         this.workHours = workHours;
         this.rate = rate;
-
+        this.name = name;
 
     }
 
@@ -38,9 +39,16 @@ public class IAccountantImpl implements IAccountant {
         this.rate = rate;
     }
 
-    public static int CalculateCurrentMonthSalaryForAccountant(int workHoursAccountant, int rateAccountant) {
-        return (rateAccountant * workHoursAccountant) / 160;
+    @Override
+    public String GetName() {
+        return name;
     }
+
+    @Override
+    public void SetName(String name) {
+        this.name = name;
+    }
+
 
     public static int CalculateCurrentMonthSalary(int workHours, int rate) {
 
