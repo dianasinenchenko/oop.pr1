@@ -5,13 +5,36 @@ package school.lemon.changerequest.java;
  */
 public interface IAccountant extends Employees {
 
+
     @Override
-    default int CalculateCurrentMonthSalary() {
+    default int GetWorkHours() {
         return 0;
     }
 
     @Override
-    default int GetRatioOfWorkedHours() {
+    default void SetWorkHours(int workHours) {
+
+    }
+
+    @Override
+    default int GetRate() {
         return 0;
     }
+
+    @Override
+    default void SetRate(int rate) {
+
+    }
+
+    @Override
+    default String GetName() {
+        return null;
+    }
+
+    @Override
+    default void SetName(String name) {
+
+    }
+
+
 }
