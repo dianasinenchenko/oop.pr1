@@ -5,8 +5,8 @@ package school.lemon.changerequest.java;
  */
 public class Manager extends IAccountantImpl {
 
-    public Manager(int workHours, int rate) {
-        super(workHours, rate);
+    public Manager(int workHours, int rate, String name) {
+        super(workHours, rate, name);
     }
 
     @Override
@@ -27,6 +27,16 @@ public class Manager extends IAccountantImpl {
     @Override
     public void SetRate(int rate) {
         super.SetRate(rate);
+    }
+
+    @Override
+    public String GetName() {
+        return super.GetName();
+    }
+
+    @Override
+    public void SetName(String name) {
+        super.SetName(name);
     }
 
 
